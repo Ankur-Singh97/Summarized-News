@@ -7,11 +7,11 @@ for article in paper.articles:
     urls.append(article.url)
 
 if urls == []:
-    with open('/home/ankur/Desktop/y.txt', 'rb') as fp:
+    with open('y.txt', 'rb') as fp:
         urls = pickle.load(fp)
 
 else:
-    with open('/home/ankur/Desktop/y.txt', 'wb') as fp:
+    with open('y.txt', 'wb') as fp:
         pickle.dump(urls, fp)
 
 for url in urls:
